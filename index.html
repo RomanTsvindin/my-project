@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+  <h1>Mate academy</h1>
+  <form action="http://localhost:3000/api" method="post">
+    <label class="form-field">
+      Email:
+      <input type="email" name="email" required>
+    </label>
+    <label class="form-field">
+      Password:
+      <input 
+        type="password"
+        name="password" 
+        required 
+        minlength="5"
+        maxlength="32"
+        pattern="\w+"
+        >
+
+    </label>
+    <label class="form-field">
+      <input type="checkbox" name="remember" checked>
+      Remember me
+    </label>
+    <button type="reset">Sign in</button>
+  </form>
+</body>
+
+</html>
